@@ -22,4 +22,16 @@ public class stringCalculatorTest {
 
 		assertEquals(3, stringCalculator.add("1,2"));
 	}
+
+	@Test
+	public void testThreeNumbers() {
+
+		assertEquals(6, stringCalculator.add("1,2,3"));
+	}
+
+	@Test
+	public void testAlotOfNumbers() {
+
+		assertEquals(45, stringCalculator.add("1,2,3,4,5,6,7,8,9"));
+	}
 }
