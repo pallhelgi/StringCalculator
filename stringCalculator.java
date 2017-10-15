@@ -31,10 +31,10 @@ public class stringCalculator {
 
 			for(int i = 0; i < nums.length; i++) {
 
-				//if(Integer.parseInt(nums[i]) <= 1000) {
+				if(Integer.parseInt(nums[i]) <= 1000) {
 
 					total += Integer.parseInt(nums[i]);
-				//}
+				}
 			}
 
 			return total;
