@@ -4,6 +4,12 @@ public class stringCalculator {
 
 	public static int add(String numbers) {
 
-		return -1;
+		if(numbers.equals("")) {
+
+			return 0;
+		}
+		else {
+			return -1;
+		}
 	}
 }

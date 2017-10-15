@@ -10,4 +10,16 @@ public class stringCalculatorTest {
 
 		assertEquals(0, stringCalculator.add(""));
 	}
+
+	@Test
+	public void testOneNumber() {
+
+		assertEquals(1, stringCalculator.add("1"));
+	}
+
+	@Test
+	public void testTwoNumbers() {
+
+		assertEquals(2, stringCalculator.add("1,2"));
+	}
 }
