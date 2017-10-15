@@ -46,4 +46,16 @@ public class stringCalculatorTest {
 
 		assertEquals(45, stringCalculator.add("1,2,3,4\n5,6,7\n8,9"));
 	}
+
+	@Test
+	public void testNegatives() {
+
+		assertEquals(-1, stringCalculator.add("1,-2"));
+	}
+
+	@Test
+	public void testNegativeWithCommaAndNewline() {
+
+		assertEquals(19, stringCalculator.add("1,-2,3,4\n-5,-6,7\n8,9"));
+	}
 }
