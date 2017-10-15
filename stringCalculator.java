@@ -4,9 +4,16 @@ public class stringCalculator {
 
 	public static int add(String numbers) {
 
+		if(numbers.contains("//")) {
+
+			String[] split = numbers.split("\n");
+			String del = split[0];
+			String delimiter = del.replaceAll("/", "");
+		}		
+
 		if(numbers.contains("-")) {
 
-			String[] allNums = numbers.split("[\n,]");
+			String[] allNums = numbers.split("[\n,delimiter]");
 			int[] negNums = new int[allNums.length];
 
 			System.out.println("Negatives are not allowed: ");
@@ -26,7 +33,7 @@ public class stringCalculator {
 		}
 		else if(numbers.contains(",") || numbers.contains("\n")) {
 
-			String[] nums = numbers.split("[\n,]");
+			String[] nums = numbers.split("[\n,delimiter]");
 			int total = 0;
 
 			for(int i = 0; i < nums.length; i++) {

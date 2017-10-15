@@ -64,4 +64,10 @@ public class stringCalculatorTest {
 
 		assertEquals(5, stringCalculator.add("1001,5"));
 	}
+
+		@Test
+	public void testDelimter() {
+
+		assertEquals(3, stringCalculator.add("//;\n1;2"));
+	}
 }
