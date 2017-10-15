@@ -9,7 +9,13 @@ public class stringCalculator {
 			return 0;
 		}
 		else {
-			return -1;
+
+			if(numbers.contains(",")) {
+
+				String[] nums = numbers.split(",");
+				return Integer.parseInt(nums[0]) + Integer.parseInt(nums[1]);
+			}
+			return 1;
 		}
 	}
 }

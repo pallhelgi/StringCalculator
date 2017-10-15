@@ -20,6 +20,6 @@ public class stringCalculatorTest {
 	@Test
 	public void testTwoNumbers() {
 
-		assertEquals(2, stringCalculator.add("1,2"));
+		assertEquals(3, stringCalculator.add("1,2"));
 	}
 }
