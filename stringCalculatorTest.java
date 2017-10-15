@@ -34,4 +34,16 @@ public class stringCalculatorTest {
 
 		assertEquals(45, stringCalculator.add("1,2,3,4,5,6,7,8,9"));
 	}
+
+	@Test
+	public void testWithNewLine() {
+
+		assertEquals(3, stringCalculator.add("1\n2"));
+	}
+
+	@Test
+	public void testWithCommaAndNewline() {
+
+		assertEquals(45, stringCalculator.add("1,2,3,4\n5,6,7\n8,9"));
+	}
 }

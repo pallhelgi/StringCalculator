@@ -8,9 +8,9 @@ public class stringCalculator {
 
 			return 0;
 		}
-		else if(numbers.contains(",")) {
+		else if(numbers.contains(",") || numbers.contains("\n")) {
 
-			String[] nums = numbers.split(",");
+			String[] nums = numbers.split("[\n,]");
 			int total = 0;
 
 			for(int i = 0; i < nums.length; i++) {
