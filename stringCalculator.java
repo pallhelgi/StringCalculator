@@ -4,12 +4,7 @@ public class stringCalculator {
 
 	public static int add(String numbers) {
 
-
-		if(numbers.equals("")) {
-
-			return 0;
-		}
-		else if(numbers.contains("-")) {
+		if(numbers.contains("-")) {
 
 			String[] allNums = numbers.split("[\n,]");
 			int[] negNums = new int[allNums.length];
@@ -25,6 +20,10 @@ public class stringCalculator {
 				}
 			}
 		}
+		if(numbers.equals("")) {
+
+			return 0;
+		}
 		else if(numbers.contains(",") || numbers.contains("\n")) {
 
 			String[] nums = numbers.split("[\n,]");
@@ -32,7 +31,10 @@ public class stringCalculator {
 
 			for(int i = 0; i < nums.length; i++) {
 
-				total += Integer.parseInt(nums[i]);
+				//if(Integer.parseInt(nums[i]) <= 1000) {
+
+					total += Integer.parseInt(nums[i]);
+				//}
 			}
 
 			return total;

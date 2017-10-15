@@ -58,4 +58,10 @@ public class stringCalculatorTest {
 
 		assertEquals(19, stringCalculator.add("1,-2,3,4\n-5,-6,7\n8,9"));
 	}
+
+	/*@Test
+	public void testNegativeWithCommaAndNewline() {
+
+		assertEquals(5, stringCalculator.add("1001, 5"));
+	}*/
 }
